@@ -33,6 +33,8 @@ namespace YuzTanima.WebService
 
             services.AddSingleton<IBirimlerDal, EfBirimlerDal>();
             services.AddSingleton<IBirimlerService, BirimlerManager>();
+            services.AddSingleton<IRaporlarService, RaporlarManager>();
+            services.AddSingleton<IRaporlarDal, EfRaporlarDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
